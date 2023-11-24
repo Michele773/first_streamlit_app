@@ -1,6 +1,6 @@
 import streamlit
 
-streamlit.title('My Parents New Healthy Diner')
+streamlit.title('Hallo mein baba schatzi du bist so süüsssss')
 
-streamlit.title('Hollidolly')
+streamlit.title('und so toll und so ......  ein dickes Bussi')
 
