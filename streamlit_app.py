@@ -1,6 +1,6 @@
 import streamlit
 
-streamlit.title('Hallo Franki hier ist meine erste WEB-APP')
+streamlit.title('Hallo hier ist meine erste Web Applikation')
 streamlit.header(' My Parents New Healthy Diner')
    
 streamlit.header('Breakfast menu')
