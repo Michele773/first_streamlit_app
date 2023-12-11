@@ -30,6 +30,8 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 #streamlit.dataframe(my_fruit_list)
 streamlit.dataframe(fruits_to_show)
 
+streamlit.stop()
+
 #create the repeatable code blocke (function)
 def get_fruityvice_data(this_fruit_choice):
     fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + this_fruit_choice)
@@ -51,7 +53,7 @@ try:
 
 
 # don't run anything past here while we troubeshoooot
-streamlit.stop()
+#streamlit.stop()
 #import snowflake.connector
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
