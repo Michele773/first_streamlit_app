@@ -47,7 +47,7 @@ try:
        streamlit.dataframe(back_from_function)
 	   
 
-      streamlit.error()
+      # not needet ??? > streamlit.error()
 
 
 # don't run anything past here while we troubeshoooot
