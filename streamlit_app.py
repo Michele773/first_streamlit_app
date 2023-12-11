@@ -67,6 +67,14 @@ if streamlit.button('Get Fruit Load List'):
     my_data_rows = get_fruit_load_list()
     streamlit.dataframe(my_data_rows)
 
+
+my_cx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
+my_cr = my_cx.cursor()
+my_cr.execute("SELECT * from fruit_load_list")
+my_dta_rows = my_cr.fetchall()
+streamlit.header("The fruit list from sf db")
+streamlit.dataframe(my_dta_rows)
+
 streamlit.stop()
 # New Section to display fruityvice api response
 # streamlit.header("Fruityvice Fruit Advice!")
